@@ -21,7 +21,7 @@ func robot(id int, traseu []Coordonata, out chan<- Coordonata, in <-chan Coordon
 		for poz := range in {
 			fmt.Printf("Robotul %d a primit pozitia (%d, %d) de la celalalt robot.\n", id, poz.X, poz.Y)
 		}
-		fmt.Printf("Celalalt robot s-a oprit\n", id)
+		fmt.Printf("Robotul %d: Celalalt robot s-a oprit\n", id)
 	}()
 
 	for _, poz := range traseu {
